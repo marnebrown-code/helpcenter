@@ -8,11 +8,17 @@
 </head>
 <body>
   <header class="hero">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li><span aria-current="page">Help Center</span></li>
+      </ol>
+    </nav>
     <h1>How can we help?</h1>
-    <div class="search-bar">
-      <input type="text" name="search" placeholder="Search for answers..." aria-label="Search" />
-      <button type="button" aria-label="Submit search">Search</button>
-    </div>
+    <form class="search-bar" role="search">
+      <input type="text" name="search" placeholder="Search for answers..." aria-label="Search" autocomplete="off" />
+      <button type="submit" aria-label="Submit search">Search</button>
+    </form>
   </header>
 
   <main class="content">
